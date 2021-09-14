@@ -1,0 +1,173 @@
+$Color_Primaire:#9356DC ;
+$Color_Secondaire:#FF79DA ;
+$Color_Tertiaire:#99E2D0 ;
+
+
+body{
+    font-family : 'Roboto', sans-serif ;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+h2{
+    font-family:'Shrikhand' ;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+}
+
+                    /********HEADER******/
+header {
+    text-align: center;
+    p{
+        color: grey;
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+    .P_Header{
+        color: black;
+        font-size:x-large;
+        font-family: Roboto;
+        padding-left: 50px;
+        margin-bottom: 0px;
+        width: 250px;
+        
+    }
+}
+
+.Logo{
+        width: 150px;
+        height: auto;
+        padding-bottom: 5px;
+        font-family: Shrikhand;
+        color: white;
+}
+.Background_Header{
+    background-color: hsl(0, 0%, 90%)  ;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+
+    i{
+        padding-right: 10px;
+        padding-left: 55px;
+    }
+
+    input{
+        border: transparent;
+        background-color: transparent;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.Btn_Header{
+    background-color: $Color_Primaire;
+    border-radius: 40px;
+    color: white;
+    padding: 15px;
+    margin-bottom: 30px;
+     
+}
+
+            /********Section*****/
+            /*******Bouton******/
+.Btn{  /* ce bout de code sera transformer en mixin */
+    width: 90%;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 25px ;
+    font-weight: bold;
+  
+
+    
+        i{    
+            padding-right: 20px;
+        }
+}
+.Display_Btn{/* Ce bout de code sert a ce que le chiffre sois bien place dans le boutton*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Chiffre_Btn{
+    border-radius: 100%;
+    background-color: $Color_Primaire;
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin-right: -15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+}
+
+/******** Restaurant********/
+.Background_Gris{
+    background-color: hsl(0, 0%, 90%);
+    margin-bottom: 80px;
+   
+    p{/* Jai place le P ici pour que je puisse mettre le i:hover en dessous de lautre i */
+        margin: 0px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+}
+.Background_Img{
+    background-color: white;
+    margin: 15px;
+    border-radius: 20px;
+    
+    i {
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+}
+h3{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin:0px;
+}
+/**********FOOTERS*********/
+footer{
+   background-color: rgb(63, 62, 62); 
+   padding-left: 20px;
+   line-height: 1.5;
+  
+
+   a{
+       text-decoration: none;
+       color: white;
+   }
+
+   i{
+       color: white;
+       padding-right: 10px;
+       font-size: small;
+   }
+   
+}
+h4{
+    font-family: 'Shrikhand';
+    color: white;
+    padding-top: 20px;
+}
+.Main{
+    transform: rotate(-45deg);
+}
