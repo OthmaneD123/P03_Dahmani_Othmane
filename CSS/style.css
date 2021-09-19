@@ -34,10 +34,13 @@ header p {
 header .P_Header {
   color: black;
   font-size: x-large;
-  font-family: Roboto;
+  font-family: 'Roboto';
   padding-left: 50px;
   margin-bottom: 0px;
-  width: 250px;
+}
+
+.Background_Header {
+  background-color: #e6e6e6;
 }
 
 .Logo {
@@ -48,11 +51,8 @@ header .P_Header {
   color: white;
 }
 
-.Background_Header {
-  background-color: #e6e6e6;
-}
-
 form {
+  /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +79,7 @@ form input {
   color: white;
   padding: 15px;
   margin-bottom: 30px;
+  background: linear-gradient(70deg, #FF79DA, #9356DC);
 }
 
 /********Section*****/
