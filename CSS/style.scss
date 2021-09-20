@@ -10,6 +10,7 @@ body{
     font-family : 'Roboto', sans-serif ;
     margin: 0 auto;
     max-width: 1400px;
+    background-color: red;
 }
 p{
     font-family:'Roboto' ;
@@ -180,18 +181,14 @@ footer{
 h4{
     font-family: 'Shrikhand';
     color: white;
-    padding-top: 20px;
+    background-color: red;
 }
 .Main{
     transform: rotate(-45deg);
 }
 
 
-
-
-
 /**********/
 .Return {
     cursor: pointer;
-    
 }
