@@ -4,8 +4,9 @@ body {
   max-width: 1400px;
 }
 
-h2 {
-  font-family: 'Shrikhand';
+p {
+  font-family: 'Roboto';
+  font-weight: bold;
   padding-left: 20px;
   padding-top: 35px;
 }
@@ -47,10 +48,9 @@ header .P_Header {
   width: 150px;
   height: auto;
   padding-bottom: 5px;
-  font-family: Shrikhand;
-  color: white;
 }
 
+/* BARRE DE RECHERCHE*******/
 form {
   /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
   display: -webkit-box;
@@ -83,19 +83,20 @@ form input {
 }
 
 /********Section*****/
-/*******Bouton******/
+/*******FONCTIONNEMENT******/
 .Btn {
   /* ce bout de code sera transformer en mixin */
-  width: 90%;
+  width: 100%;
   background-color: #e6e6e6;
   border-radius: 15px;
   margin-bottom: 15px;
   padding: 25px;
   font-weight: bold;
+  border: none;
 }
 
 .Btn i {
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .Display_Btn {
@@ -136,25 +137,34 @@ form input {
 /******** Restaurant********/
 .Background_Gris {
   background-color: #e6e6e6;
-  margin-bottom: 80px;
-}
-
-.Background_Gris p {
-  /* Jai place le P ici pour que je puisse mettre le i:hover en dessous de lautre i */
-  margin: 0px;
-  padding-left: 10px;
-  padding-bottom: 20px;
 }
 
 .Background_Img {
   background-color: white;
   margin: 15px;
   border-radius: 20px;
+  position: relative;
 }
 
 .Background_Img i {
-  margin-top: 10px;
+  position: absolute;
+  top: 220px;
+  right: 0;
+  font-size: x-large;
   padding-right: 20px;
+}
+
+.Background_Img p {
+  font-weight: normal;
+  color: grey;
+  padding: 0px 0px 20px 10px;
+  margin: 0;
+}
+
+.Coeur:hover {
+  color: #9356DC;
+  background-color: red;
+  cursor: pointer;
 }
 
 h3 {
