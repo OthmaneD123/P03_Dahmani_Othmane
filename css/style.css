@@ -78,30 +78,39 @@ img {
 /********HEADER******/
 header {
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header p {
-  color: grey;
-  margin-top: 0px;
+  margin-top: 10px;
   padding-top: 10px;
+  font-weight: inherit;
 }
 
 header .p_header {
   color: black;
   font-size: x-large;
   font-family: 'Roboto';
-  padding-left: 50px;
+  padding-left: 30px;
   margin-bottom: 0px;
 }
 
 .background_header {
   background-color: #e6e6e6;
+  padding-bottom: 50px;
 }
 
 .logo {
   width: 150px;
   height: auto;
+  padding-top: 5px;
   padding-bottom: 5px;
+  border-radius: 0;
 }
 
 /* BARRE DE RECHERCHE*******/
@@ -113,6 +122,8 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #cccccc;
+  padding: 10px;
 }
 
 form i {
@@ -132,18 +143,25 @@ form input {
   border-radius: 40px;
   color: white;
   padding: 15px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+  border: none;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
 /********Section*****/
 /*******FONCTIONNEMENT******/
-button {
+section {
   /* ce bout de code sera transformer en mixin */
+}
+
+section button {
+  width: 100%;
   background-color: #e6e6e6;
   border-radius: 15px;
   margin-bottom: 15px;
+  margin-right: 15px;
   padding: 25px;
   font-weight: bold;
   border: none;
@@ -155,7 +173,7 @@ button {
           justify-content: flex-start;
 }
 
-button i {
+section i {
   padding-right: 15px;
 }
 
@@ -164,12 +182,12 @@ button i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .chiffre_btn {
@@ -182,6 +200,7 @@ button i {
   margin-left: 15px;
   margin-bottom: 15px;
   z-index: 1;
+  font-size: small;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,7 +210,12 @@ button i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: small;
+}
+
+.titre {
+  /*** Sert a grossir la taille des titres au dessus des button */
+  font-size: x-large;
+  padding-bottom: 10px;
 }
 
 /******** Restaurant********/
@@ -203,30 +227,44 @@ button i {
   background-color: white;
   margin: 15px;
   border-radius: 20px;
+  position: relative;
 }
 
 .background_img p {
   font-weight: normal;
-  color: grey;
+  font-weight: inherit;
   padding: 0px 0px 20px 10px;
   margin: 0;
+  color: black;
 }
 
-.contenu_image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.favoris {
-  position: relative;
-  width: 100px;
-}
-
-.favoris i {
-  position: relative;
-  top: 0;
+.background_img i {
+  position: absolute;
   right: 0;
+  top: 0;
+  padding-top: 220px;
+}
+
+.fas {
+  opacity: 0;
+  color: purple;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.far {
+  opacity: 1;
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.favoris:hover .fas {
+  opacity: 1;
+}
+
+.favoris:hover .far {
+  opacity: 0;
 }
 
 h3 {
@@ -236,6 +274,7 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: bold;
   padding-left: 10px;
   padding-bottom: 0px;
   padding-top: 10px;
@@ -262,11 +301,18 @@ footer i {
 
 h4 {
   font-family: 'Shrikhand';
-  color: white;
+  color: red;
 }
 
 .main {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+/********** Les CARTE DES RESTAURANTS ********/
+.background_header_restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
