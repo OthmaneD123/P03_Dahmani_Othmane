@@ -10,6 +10,9 @@ body{
     margin: 0 auto;
     max-width: 1400px;
 
+    a{
+        text-decoration: none;
+    }
    
 }
 p{
@@ -17,7 +20,7 @@ p{
     font-weight: bold;
     padding-left: 20px;
     padding-top: 35px;
-        
+
 }
 
 img{
@@ -36,7 +39,7 @@ header {
         margin-top: 0px;
         padding-top: 10px;
     }
-    .P_Header{
+    .p_header{
         color: black;
         font-size:x-large;
         font-family: 'Roboto';
@@ -44,11 +47,11 @@ header {
         margin-bottom: 0px;
     }
 }
-.Background_Header{
+.background_header{
     background-color: hsl(0, 0%, 90%)  ;
 }
 
-.Logo{
+.logo{
         width: 150px;
         height: auto;
         padding-bottom: 5px;
@@ -73,39 +76,30 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
     }
 }
 
-.Btn_Header{
+.btn_header{
     background-color: $Color_Primaire;
     border-radius: 40px;
     color: white;
     padding: 15px;
     margin-bottom: 30px;
-    background: linear-gradient(70deg, $Color_Secondaire, $Color_Primaire); 
+    background: linear-gradient(180deg, $Color_Secondaire, $Color_Primaire); 
 }
 
             /********Section*****/
             /*******FONCTIONNEMENT******/
-.Btn{  /* ce bout de code sera transformer en mixin */
-    width: 100%;
-    background-color: hsl(0, 0%, 90%);
-    border-radius: 15px;
-    margin-bottom: 15px;
-    padding: 25px ;
-    font-weight: bold;
-    border: none;
+button{  /* ce bout de code sera transformer en mixin */
     
-   
-
-    i {
-        padding-right: 15px;
-    }
+  @include boutton;
+  background-color:red;
+  
 }
 
-.Display_Btn{/* Ce bout de code sert a ce que le chiffre sois bien place dans le boutton*/
+.display_btn{/* Ce bout de code sert a ce que le chiffre sois bien place dans le boutton*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Chiffre_Btn{
+.chiffre_btn{
     border-radius: 100%;
     background-color: $Color_Primaire;
     color: white;
@@ -122,23 +116,15 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
 }
 
                 /******** Restaurant********/
-.Background_Gris{
+.background_gris{
     background-color: hsl(0, 0%, 90%);
    
 }
-.Background_Img{
+.background_img{
     background-color: white;
     margin: 15px;
     border-radius: 20px;
-    position: relative;
 
-    i {
-        position: absolute;
-        top: 220px;
-        right: 0;
-        font-size: x-large;
-        padding-right: 20px;
-    }
     p{
         font-weight: normal;
         color: grey;
@@ -147,11 +133,21 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
     }
 
 }
- .Coeur:hover {
-    color: $Color_Primaire;
-    background-color: red;
-    cursor: pointer;
+.contenu_image{
+    display: flex;
+
 }
+.favoris{
+    position: relative;
+    width: 100px;
+
+    i{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
 h3{
     display: flex;
     justify-content: space-between;
@@ -182,14 +178,7 @@ footer{
 h4{
     font-family: 'Shrikhand';
     color: white;
-    background-color: red;
 }
-.Main{
+.main{
     transform: rotate(-45deg);
-}
-
-
-/**********/
-.Return {
-    cursor: pointer;
 }

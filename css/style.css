@@ -54,6 +54,10 @@ body {
   max-width: 1400px;
 }
 
+body a {
+  text-decoration: none;
+}
+
 p {
   font-family: 'Roboto';
   font-weight: bold;
@@ -82,7 +86,7 @@ header p {
   padding-top: 10px;
 }
 
-header .P_Header {
+header .p_header {
   color: black;
   font-size: x-large;
   font-family: 'Roboto';
@@ -90,11 +94,11 @@ header .P_Header {
   margin-bottom: 0px;
 }
 
-.Background_Header {
+.background_header {
   background-color: #e6e6e6;
 }
 
-.Logo {
+.logo {
   width: 150px;
   height: auto;
   padding-bottom: 5px;
@@ -123,33 +127,39 @@ form input {
   color: black;
 }
 
-.Btn_Header {
+.btn_header {
   background-color: #9356DC;
   border-radius: 40px;
   color: white;
   padding: 15px;
   margin-bottom: 30px;
-  background: linear-gradient(70deg, #FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
 /********Section*****/
 /*******FONCTIONNEMENT******/
-.Btn {
+button {
   /* ce bout de code sera transformer en mixin */
-  width: 100%;
   background-color: #e6e6e6;
   border-radius: 15px;
   margin-bottom: 15px;
   padding: 25px;
   font-weight: bold;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.Btn i {
+button i {
   padding-right: 15px;
 }
 
-.Display_Btn {
+.display_btn {
   /* Ce bout de code sert a ce que le chiffre sois bien place dans le boutton*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +172,7 @@ form input {
           align-items: center;
 }
 
-.Chiffre_Btn {
+.chiffre_btn {
   border-radius: 100%;
   background-color: #9356DC;
   color: white;
@@ -185,36 +195,38 @@ form input {
 }
 
 /******** Restaurant********/
-.Background_Gris {
+.background_gris {
   background-color: #e6e6e6;
 }
 
-.Background_Img {
+.background_img {
   background-color: white;
   margin: 15px;
   border-radius: 20px;
-  position: relative;
 }
 
-.Background_Img i {
-  position: absolute;
-  top: 220px;
-  right: 0;
-  font-size: x-large;
-  padding-right: 20px;
-}
-
-.Background_Img p {
+.background_img p {
   font-weight: normal;
   color: grey;
   padding: 0px 0px 20px 10px;
   margin: 0;
 }
 
-.Coeur:hover {
-  color: #9356DC;
-  background-color: red;
-  cursor: pointer;
+.contenu_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.favoris {
+  position: relative;
+  width: 100px;
+}
+
+.favoris i {
+  position: relative;
+  top: 0;
+  right: 0;
 }
 
 h3 {
@@ -251,16 +263,10 @@ footer i {
 h4 {
   font-family: 'Shrikhand';
   color: white;
-  background-color: red;
 }
 
-.Main {
+.main {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-}
-
-/**********/
-.Return {
-  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

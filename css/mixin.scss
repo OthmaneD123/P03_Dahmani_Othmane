@@ -1,0 +1,11 @@
+@mixin boutton {
+    width: 100%;
+    background-color: red;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 25px ;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+}
