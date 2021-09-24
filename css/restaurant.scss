@@ -1,0 +1,19 @@
+@import "reset.scss";
+@import "mixin.scss";
+
+/*********HEARDER******/
+/*********SECTION******/
+
+h1{
+    font-family:'Shrikhand';
+    font-size: x-large;
+    padding-left: 20px;
+
+    i {
+        font-size: x-large;
+    }
+}
+.titre{
+    text-transform: uppercase;
+    font-size: medium;
+}

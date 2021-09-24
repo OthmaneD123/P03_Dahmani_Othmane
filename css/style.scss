@@ -10,6 +10,7 @@ body{
     font-family : 'Roboto', sans-serif ;
     margin: 0 auto;
     max-width: 1400px;
+    
 
     a{
         text-decoration: none;
@@ -99,16 +100,7 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
 section {  /* ce bout de code sera transformer en mixin */
 
     button{
-        width: 100%;
-        background-color: hsl(0, 0%, 90%);
-        border-radius: 15px;
-        margin-bottom: 15px;
-        margin-right: 15px;
-        padding: 25px ;
-        font-weight: bold;
-        border: none;
-        display: flex;
-        justify-content: flex-start;
+    @include boutton;
     }
    
     i {
@@ -216,7 +208,7 @@ footer{
 }
 h4{
     font-family: 'Shrikhand';
-    color: red;
+    color: white;
 }
 .main{
     transform: rotate(-45deg);
