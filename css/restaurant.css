@@ -94,15 +94,18 @@ header i {
   border-radius: 0;
 }
 
+.img_restaurant {
+  position: relative;
+}
+
 /*********SECTION******/
 h1 {
   font-family: 'Shrikhand';
   font-size: x-large;
   padding-left: 20px;
-  margin-top: -30px;
   width: 100%;
-  background-color: #e6e6e6;
-  border-radius: 20px 20px 0 0;
+  background-color: red;
+  position: absolute;
   z-index: 1;
 }
 
@@ -141,6 +144,10 @@ button h3 {
 
 button p {
   font-size: small;
+}
+
+button strong {
+  margin-left: 100px;
 }
 
 .titre {
@@ -188,5 +195,34 @@ h4 {
 .main {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+/* Creation de l'animation apparition  */
+.entree {
+  -webkit-animation: 2s 1s 1 both apparition;
+          animation: 2s 1s 1 both apparition;
+}
+
+.plats {
+  -webkit-animation: 2s 1s 1 both apparition;
+          animation: 2s 1s 1 both apparition;
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=restaurant.css.map */
