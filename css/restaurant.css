@@ -52,15 +52,6 @@ body {
   background-color: #e6e6e6;
 }
 
-img {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
 /*********HEARDER******/
 header {
   background-color: white;
@@ -96,6 +87,12 @@ header i {
 
 .img_restaurant {
   position: relative;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 /*********SECTION******/
@@ -103,15 +100,20 @@ h1 {
   font-family: 'Shrikhand';
   font-size: x-large;
   padding-left: 20px;
-  width: 100%;
-  background-color: red;
+  padding-top: 30px;
+  margin-top: -55px;
+  border-radius: 45px 45px 0 0;
+  /*   width: 100%;*/
+  background-color: #e6e6e6;
   position: absolute;
   z-index: 1;
 }
 
 h1 i {
   font-size: x-large;
-  margin-left: 50px;
+  margin-left: 35px;
+  padding-right: 50px;
+  /* Le padding ici a ete mis afin de bien placer le background color avec le border-radius*/
 }
 
 button {
@@ -129,10 +131,7 @@ button {
       -ms-flex-pack: start;
           justify-content: flex-start;
   background-color: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -143,11 +142,11 @@ button h3 {
 }
 
 button p {
-  font-size: small;
+  font-weight: initial;
 }
 
 button strong {
-  margin-left: 100px;
+  font-weight: bold;
 }
 
 .titre {
@@ -164,6 +163,7 @@ button strong {
   margin-top: 20px;
   margin-left: 30px;
   border: none;
+  cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   width: auto;
@@ -223,6 +223,65 @@ h4 {
   }
   to {
     opacity: 1;
+  }
+}
+
+/*----VERSION TABLETTE *****/
+/*----VERSION ORDINATEUR *****/
+@media all and (min-width: 1024px) {
+  /*******HEADER*****/
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logo {
+    padding-left: 15px;
+  }
+  h1 {
+    width: auto;
+    margin-top: -70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0;
+    background-color: white;
+  }
+  h1 i {
+    padding-right: 0;
+  }
+  /*******SECTION*****/
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  section div {
+    width: 33%;
+  }
+  button {
+    display: block;
+    margin-right: 50px;
+    height: 70px;
+  }
+  .btn_commander {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 150px;
   }
 }
 /*# sourceMappingURL=restaurant.css.map */
