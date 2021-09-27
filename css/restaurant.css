@@ -257,14 +257,11 @@ h4 {
   }
   /*******SECTION*****/
   section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  section div {
-    width: 33%;
+    margin-right: 50px;
+    margin-left: 50px;
   }
   button {
     display: block;
@@ -272,16 +269,8 @@ h4 {
     height: 70px;
   }
   .btn_commander {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 150px;
+    margin-left: 400px;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=restaurant.css.map */
