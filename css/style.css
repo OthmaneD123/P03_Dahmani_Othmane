@@ -244,24 +244,24 @@ section i {
   padding-top: 220px;
 }
 
-.fas {
+.coeur_plein {
   opacity: 0;
   color: #99E2D0;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.far {
+.coeur_vide {
   opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.favoris:hover .fas {
+.favoris:hover .coeur_plein {
   opacity: 1;
 }
 
-.favoris:hover .far {
+.favoris:hover .coeur_vide {
   opacity: 0;
 }
 

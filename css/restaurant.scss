@@ -43,7 +43,8 @@ h1{
     padding-top: 30px;
     margin-top: -55px;
     border-radius: 45px 45px 0 0  ;
-     /*   width: 100%;*/
+    width: 100%;
+    box-sizing: border-box;/* Sert a ce qu'il n'y a pas de debordement, et evite que la width sajoute au padding*/
     background-color:$Color_grey;
     position: absolute;
     z-index: 1;
@@ -51,7 +52,7 @@ h1{
     i {
         font-size: x-large;
         margin-left: 35px;
-        padding-right: 50px;/* Le padding ici a ete mis afin de bien placer le background color avec le border-radius*/
+       
     }
 }
 button{
@@ -60,7 +61,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    
     
 
     h3{
@@ -69,11 +70,8 @@ button{
     p{
        font-weight: initial; 
     }
-    strong{
-        display: flex;
-        justify-content: flex-end;
-    }
 }
+
 
 .titre{
     text-transform: uppercase;
