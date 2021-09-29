@@ -166,12 +166,7 @@ section {  /* ce bout de code sera transformer en mixin */
   
   .far {
     opacity:1;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 1000ms;
-    &:hover {
-        transform: scale(1.15);
-    }
+   transition: 1s;
   }
   
   
