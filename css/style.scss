@@ -36,20 +36,16 @@ img{
                     /********HEADER******/
 header {
     text-align: center;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
     p{
-        margin-top: 10px;
         padding-top: 10px;
-        font-weight: inherit;
+        font-weight: 100; 
     }
-    .p_header{
-        color: black;
-        font-size:x-large;
-        font-family: 'Roboto';
-        padding-left: 30px;
-        margin-bottom: 0px;
-    }
+}
+h1{
+    font-size: x-large;
+    font-weight: 700;
 }
 .background_header{
     background-color: $Color_grey  ;
@@ -79,20 +75,17 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
     input{
         border: transparent;
         background-color: transparent;
-        font-weight: bold;
         color: black;
+        font-family: 'Roboto';
+        
     }
 }
 
 .btn_header{
-    background-color: $Color_Primaire;
-    border-radius: 40px;
-    color: $Color_white;
-    padding: 15px;
-    margin-top: 20px;
-    margin-left: 30px;
-    border: none;
-    background: linear-gradient(180deg, $Color_Secondaire, $Color_Primaire); 
+   @include btn_header_et_commander;
+    &:hover{
+        box-shadow:5px 3px 5px red
+    }
 }
 
             /********Section*****/
@@ -142,8 +135,8 @@ section {  /* ce bout de code sera transformer en mixin */
     position: relative;
 
     p{
-        font-weight: normal;
-        font-weight: inherit;
+       
+        font-weight: 200;
         padding: 0px 0px 20px 10px;
         margin: 0;
         color: black;
@@ -156,6 +149,10 @@ section {  /* ce bout de code sera transformer en mixin */
         padding-top: 220px;
     }
 
+}
+h3{
+    font-weight: 700;
+    font-size: large;
 }
 .coeur_plein{
     opacity:0;

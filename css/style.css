@@ -87,17 +87,13 @@ header {
 }
 
 header p {
-  margin-top: 10px;
   padding-top: 10px;
-  font-weight: inherit;
+  font-weight: 100;
 }
 
-header .p_header {
-  color: black;
+h1 {
   font-size: x-large;
-  font-family: 'Roboto';
-  padding-left: 30px;
-  margin-bottom: 0px;
+  font-weight: 700;
 }
 
 .background_header {
@@ -134,20 +130,24 @@ form i {
 form input {
   border: transparent;
   background-color: transparent;
-  font-weight: bold;
   color: black;
+  font-family: 'Roboto';
 }
 
 .btn_header {
-  background-color: #9356DC;
   border-radius: 40px;
   color: white;
   padding: 15px;
   margin-top: 20px;
-  margin-left: 30px;
   border: none;
+  cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
+}
+
+.btn_header:hover {
+  -webkit-box-shadow: 5px 3px 5px red;
+          box-shadow: 5px 3px 5px red;
 }
 
 /********Section*****/
@@ -230,8 +230,7 @@ section i {
 }
 
 .background_img p {
-  font-weight: normal;
-  font-weight: inherit;
+  font-weight: 200;
   padding: 0px 0px 20px 10px;
   margin: 0;
   color: black;
@@ -242,6 +241,11 @@ section i {
   right: 0;
   top: 0;
   padding-top: 220px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: large;
 }
 
 .coeur_plein {

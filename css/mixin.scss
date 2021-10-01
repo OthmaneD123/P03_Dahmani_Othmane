@@ -16,13 +16,11 @@
     justify-content: center;
 }
 
-@mixin Btn_header_et_commander {
-        background-color: $Color_Primaire;
+@mixin btn_header_et_commander {
         border-radius: 40px;
         color: white;
         padding: 15px;
         margin-top: 20px;
-        margin-left: 30px;
         border: none;
         cursor: pointer;
         background: linear-gradient(180deg, $Color_Secondaire, $Color_Primaire); 
