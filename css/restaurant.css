@@ -52,6 +52,10 @@ body {
   background-color: #e6e6e6;
 }
 
+body a {
+  text-decoration: none;
+}
+
 /*********HEARDER******/
 header {
   background-color: white;
@@ -111,72 +115,92 @@ h1 {
 
 h1 i {
   font-size: x-large;
-  margin-left: 35px;
+  margin-left: 15px;
 }
 
 button {
   width: 100%;
-  background-color: #e6e6e6;
-  border-radius: 15px;
-  margin-bottom: 15px;
-  padding: 25px;
-  font-weight: bold;
-  border: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
   background-color: white;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  padding-right: 0;
+  padding-left: 10px;
+  padding-top: 3px;
+  margin: 20px;
+}
+
+button:hover .icone_check {
+  width: 45px;
+  -webkit-animation: 1s 1s both rotate;
+          animation: 1s 1s both rotate;
+}
+
+button strong {
+  width: 30px;
+  padding: 20px;
+  padding-bottom: 0;
+  padding-right: 10px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 button p {
   font-weight: initial;
+  text-align: left;
 }
 
 h3 {
   font-size: large;
+  font-weight: bold;
 }
 
-.test {
+.icone_check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  text-align: right;
-}
-
-.test strong {
-  margin-left: 100px;
-}
-
-.test i {
-  margin-left: 20px;
-  font-size: x-large;
-  opacity: 0;
-  /****************Creation de l'animation sur les boutons*****************/
-}
-
-.test i:hover {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 0;
+  height: 50px;
+  color: white;
+  border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
-  opacity: 1;
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
-  -webkit-transition: 1s;
-  transition: 1s;
+  overflow: hidden;
+}
+
+/******* Animation du check sur les bouttons */
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .titre {

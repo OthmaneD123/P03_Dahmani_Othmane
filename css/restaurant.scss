@@ -7,6 +7,10 @@
 
 body{
     background-color:   $Color_grey;
+
+    a{
+        text-decoration: none;
+    }
     
 }
 /*********HEARDER******/
@@ -53,44 +57,70 @@ h1{
     
     i {
         font-size: x-large;
-        margin-left: 35px;
+        margin-left: 15px;
+    
     }
 }
+
 button{
-    @include boutton;
+    width: 100%;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
     background-color: $Color_white;
-    flex-direction: column;
-    align-items: flex-start;
+    padding-right: 0;
+    padding-left: 10px;
+    padding-top: 3px;
+    margin: 20px;
+
+    &:hover
+    .icone_check{
+        width: 45px;
+        animation:  1s 1s both rotate;
+        
+       }
+
+    strong{
+        width: 30px;
+        padding: 20px;
+        padding-bottom: 0;
+        padding-right: 10px;
+        font-weight: bold;
+        display: flex;
+        align-items: flex-end;
+    }
     p{
        font-weight: initial; 
+       text-align: left;
     }
+   
     
 }
 h3{
     font-size: large;
+    font-weight: bold;
 }
+.icone_check{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 0;
+   height: 50px;
+   color: $Color_white;
+   border-radius: 0 15px 15px 0;
+   background-color: $Color_Tertiaire;
+   overflow: hidden;
+}
+/******* Animation du check sur les bouttons */
 
-.test{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
-
-    strong {
-        margin-left: 100px;
-    }
-    i{
-        margin-left: 20px;
-        font-size: x-large;
-        opacity: 0;
-        /****************Creation de l'animation sur les boutons*****************/
-        &:hover{
-            background-color: $Color_Tertiaire;
-            opacity: 1;
-            transform: rotate(1turn);
-            transition: 1s;
-        }
-    }
+@keyframes rotate {
+   from{
+       transform: rotate(0deg)
+   }
+   to{
+       transform: rotate(360deg);
+   }
 }
 
 
@@ -160,6 +190,7 @@ h4{
     }
         
 }
+
 
 
                 /*----VERSION TABLETTE *****/
