@@ -63,8 +63,11 @@ h1{
 }
 
 button{
-    width: 100%;
+    width: 90%;
     display: flex;
+    
+    justify-content: flex-end;
+    justify-content: space-between;
     border: none;
     cursor: pointer;
     border-radius: 15px;
@@ -76,7 +79,7 @@ button{
 
     &:hover
     .icone_check{
-        width: 45px;
+        width: 65px;
         animation:  1s 1s both rotate;
         
        }
@@ -88,7 +91,9 @@ button{
         padding-right: 10px;
         font-weight: bold;
         display: flex;
-        align-items: flex-end;
+        
+        justify-content: flex-end;
+       
     }
     p{
        font-weight: initial; 
@@ -98,18 +103,25 @@ button{
     
 }
 h3{
-    font-size: large;
+    text-align: left;
     font-weight: bold;
+}
+.prix{
+    display: flex;
+}
+.background_icone{
+    background-color: $Color_Tertiaire;
+    border-radius: 0 15px 15px 0;
 }
 .icone_check{
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 0;
+   width: 0px;
    height: 50px;
+   font-size: x-large;
    color: $Color_white;
    border-radius: 0 15px 15px 0;
-   background-color: $Color_Tertiaire;
    overflow: hidden;
 }
 /******* Animation du check sur les bouttons */
@@ -194,13 +206,14 @@ h4{
 
 
                 /*----VERSION TABLETTE *****/
-@media all and (min-width:500px ) and (max-width:1024px){
+@media all and (min-width:500px ) and (max-width:1014px){
     .logo{
         @include flexcenter
     }
     section{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         padding-top: 20px;
         width:90%;
 
@@ -248,13 +261,24 @@ h4{
      section{
         @include flexcenter;
         flex-wrap: wrap;
-         justify-content: space-around;
-         text-align: center;
+        justify-content: space-around;
+       
+        
      }
-   
+     .titre:after {  /*sert a faire apparaitre le petit trait en dessous chaque titre*/
+        content: "";
+        width: 200px;
+        height: 3px;
+        background-color: #99E2D0;
+        display: block;
+        margin-top: 9px;
+        margin-left: 50px;
+        margin-bottom: 0;
+    }
      .btn_commander{
        
-        margin-left: 400px;
+        display: flex;
+        justify-content: center;
         width: 200px;
         text-align: center;
      }

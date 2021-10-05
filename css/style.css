@@ -146,8 +146,8 @@ form input {
 }
 
 .btn_header:hover {
-  -webkit-box-shadow: 5px 3px 5px red;
-          box-shadow: 5px 3px 5px red;
+  -webkit-box-shadow: 5px 3px 5px grey;
+          box-shadow: 5px 3px 5px grey;
 }
 
 /********Section*****/

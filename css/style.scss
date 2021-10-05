@@ -77,14 +77,14 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
         background-color: transparent;
         color: black;
         font-family: 'Roboto';
-        
     }
 }
 
 .btn_header{
    @include btn_header_et_commander;
     &:hover{
-        box-shadow:5px 3px 5px red
+        box-shadow:5px 3px 5px grey;
+        
     }
 }
 
