@@ -82,9 +82,12 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
 
 .btn_header{
    @include btn_header_et_commander;
-    &:hover{
+    &:hover
+    
+    {
         box-shadow:5px 3px 5px grey;
-        
+        background-color:  rgba(1, 28, 55, 1)
+    
     }
 }
 
@@ -94,6 +97,7 @@ section {  /* ce bout de code sera transformer en mixin */
 
     button{
     @include boutton;
+    box-shadow: 3px 3px rgb(219, 218, 218);
     }
    
     i {
@@ -128,6 +132,11 @@ section {  /* ce bout de code sera transformer en mixin */
     background-color: $Color_grey;
    
 }
+h2 {
+    font-weight: 700;
+    padding-left: 15px;
+    padding-top: 15px;
+}
 .background_img{
     background-color: $Color_white;
     margin: 15px;
@@ -149,6 +158,16 @@ section {  /* ce bout de code sera transformer en mixin */
         padding-top: 220px;
     }
 
+}
+.new{
+    background-color: $Color_Tertiaire;
+    color: rgb(90, 77, 77);
+    padding: 5px;
+    font-weight: 700;
+    font-size: small;
+    position: absolute;
+    top: 30px;
+    right:20px;
 }
 h3{
     font-weight: 700;
@@ -209,5 +228,38 @@ h4{
 }
 .main{
     transform: rotate(-45deg);
+}
+
+/**********************************************/
+            /*Version Ordinateur */
+/**********************************************/
+
+@media all and (min-width:1024px ){
+    
+        
+           nav{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            margin-bottom: 15px;
+           } 
+        
+    
+    .display_destkop{ /* Cette classe a ete cree afin daligner les bouttons et de gere leur espace dans la section*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .background_img{ /* ici on va gere la taille de chaque boutton dans la section*/
+        margin: 30px;
+        width: 30%;
+    }
+    h2 {
+        text-align: center;
+        padding-top: 15px;
+        font-weight: 700;
+        
+    }
 }
 

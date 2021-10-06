@@ -13,7 +13,9 @@ body{
     }
     
 }
-/*********HEARDER******/
+            /******************************/
+                    /*  Header    */
+            /******************************/
 header{
     background-color: $Color_white;
     
@@ -41,13 +43,15 @@ header{
     object-fit: cover;
     object-position: center;
 }
-/*********SECTION******/
+            /******************************/
+                /*  section     */
+            /******************************/
 h1{
     font-family:'Shrikhand';
     font-size: x-large;
     padding-left: 20px;
     padding-top: 30px;
-    margin-top: -55px;
+    margin-top: -53px;
     z-index: 1;
     border-radius: 45px 45px 0 0  ;
     width: 100%;
@@ -58,15 +62,12 @@ h1{
     i {
         font-size: x-large;
         margin-left: 15px;
-    
     }
 }
 
 button{
     width: 90%;
     display: flex;
-    
-    justify-content: flex-end;
     justify-content: space-between;
     border: none;
     cursor: pointer;
@@ -80,7 +81,7 @@ button{
     &:hover
     .icone_check{
         width: 65px;
-        animation:  1s 1s both rotate;
+        animation:  1s 0.5s both rotate;
         
        }
 
@@ -91,7 +92,6 @@ button{
         padding-right: 10px;
         font-weight: bold;
         display: flex;
-        
         justify-content: flex-end;
        
     }
@@ -100,18 +100,22 @@ button{
        text-align: left;
     }
    
-    
 }
 h3{
     text-align: left;
     font-weight: bold;
 }
-.prix{
+.prix{ /* sert a bien placer le background et lanimation juste a cote du prix*/
     display: flex;
 }
 .background_icone{
     background-color: $Color_Tertiaire;
     border-radius: 0 15px 15px 0;
+
+    &:hover{
+        transform: translateX(1);
+        transition: transform 1s ease-in;
+    }
 }
 .icone_check{
    display: flex;
@@ -182,7 +186,10 @@ h4{
 .main{
     transform: rotate(-45deg);
 }
-/* Creation de l'animation apparition  */
+            /*************************************************/
+                /* Creation de l'animation apparition  */
+            /************************************************/
+
 .entree{
     animation: 2s 1s 1 both apparition
 }
@@ -204,25 +211,15 @@ h4{
 }
 
 
-
-                /*----VERSION TABLETTE *****/
+                /*************************************************/
+                     /*----VERSION TABLETTE *****/
+               /************************************************/
+              
 @media all and (min-width:500px ) and (max-width:1014px){
     .logo{
         @include flexcenter
     }
-    section{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-top: 20px;
-        width:90%;
-
-        div{
-            margin-right: 10px;
-            @include flexcenter
-            
-        }
-    }
+    
     .titre{
         display: flex;
         justify-content: flex-start;
@@ -230,8 +227,10 @@ h4{
         padding-right: 15px;
     }
 }
-
-              /*----VERSION ORDINATEUR *****/             
+                /*************************************************/
+                     /*----VERSION ORDINATEUR *****/     
+               /************************************************/
+                     
 @media all and (min-width:1024px ){
     /*******HEADER*****/
     header{
