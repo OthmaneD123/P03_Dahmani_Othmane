@@ -141,6 +141,7 @@ form input {
   margin-top: 20px;
   border: none;
   cursor: pointer;
+  font-family: 'Roboto';
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
 }
@@ -148,7 +149,27 @@ form input {
 .btn_header:hover {
   -webkit-box-shadow: 5px 3px 5px grey;
           box-shadow: 5px 3px 5px grey;
-  background-color: #011c37;
+  background: -webkit-gradient(linear, left top, right top, from(#684f4f), to(#8d2424));
+  background: linear-gradient(90deg, #684f4f, #8d2424);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.progress {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  background-color: aqua;
+  border: solid 2px black;
 }
 
 /********Section*****/
@@ -336,6 +357,9 @@ h4 {
 /*Version Ordinateur */
 /**********************************************/
 @media all and (min-width: 1024px) {
+  /**********************************************/
+  /*Header*/
+  /**********************************************/
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -344,6 +368,14 @@ h4 {
         justify-content: space-around;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  /**********************************************/
+  /*Section restaurant */
+  /**********************************************/
+  h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 700;
   }
   .display_destkop {
     /* Cette classe a ete cree afin daligner les bouttons et de gere leur espace dans la section*/
@@ -361,10 +393,19 @@ h4 {
     margin: 30px;
     width: 30%;
   }
-  h2 {
+  /**********************************************/
+  /*Footers */
+  /**********************************************/
+  Footer {
     text-align: center;
-    padding-top: 15px;
-    font-weight: 700;
+  }
+  Footer h4 {
+    padding-top: 10px;
+    font-size: x-large;
+  }
+  Footer nav {
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

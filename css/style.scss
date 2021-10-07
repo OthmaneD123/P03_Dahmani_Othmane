@@ -86,9 +86,20 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
     
     {
         box-shadow:5px 3px 5px grey;
-        background-color:  rgba(1, 28, 55, 1)
+        background: linear-gradient(90deg, rgb(104, 79, 79),rgb(141, 36, 36));
     
     }
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.progress{
+    margin-top: 20px;
+    display: flex;
+    width: 200px;
+    background-color: aqua;
+    border: solid 2px black
 }
 
             /********Section*****/
@@ -235,16 +246,24 @@ h4{
 /**********************************************/
 
 @media all and (min-width:1024px ){
-    
-        
-           nav{
-            display: flex;
-            justify-content: space-around;
-            margin-top: 15px;
-            margin-bottom: 15px;
-           } 
-        
-    
+            /**********************************************/
+                            /*Header*/
+            /**********************************************/
+    nav{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    } 
+         /**********************************************/
+                            /*Section restaurant */
+            /**********************************************/
+    h2 {
+        text-align: center;
+        padding-top: 15px;
+        font-weight: 700;
+                
+    }
     .display_destkop{ /* Cette classe a ete cree afin daligner les bouttons et de gere leur espace dans la section*/
         display: flex;
         flex-wrap: wrap;
@@ -255,11 +274,23 @@ h4{
         margin: 30px;
         width: 30%;
     }
-    h2 {
-        text-align: center;
-        padding-top: 15px;
-        font-weight: 700;
+
+            /**********************************************/
+                            /*Footers */
+            /**********************************************/
+
+    Footer{
+            text-align: center;
         
+        h4{
+           padding-top: 10px;
+           font-size: x-large;
+        }
+        nav{
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+       
     }
 }
 

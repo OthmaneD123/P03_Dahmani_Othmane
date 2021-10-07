@@ -7,6 +7,7 @@
 
 body{
     background-color:   $Color_grey;
+    font-family: 'Roboto';
 
     a{
         text-decoration: none;
@@ -82,10 +83,9 @@ button{
     .icone_check{
         width: 65px;
         animation:  1s 0.5s both rotate;
-        
        }
 
-    strong{
+    strong{ /* ici ce bout de code sert a gere le prix */
         width: 30px;
         padding: 20px;
         padding-bottom: 0;
@@ -93,10 +93,12 @@ button{
         font-weight: bold;
         display: flex;
         justify-content: flex-end;
+        
        
     }
-    p{
+    p{ 
        font-weight: initial; 
+       font-size: medium;
        text-align: left;
     }
    
@@ -107,15 +109,21 @@ h3{
 }
 .prix{ /* sert a bien placer le background et lanimation juste a cote du prix*/
     display: flex;
+    flex-direction: row;
 }
 .background_icone{
     background-color: $Color_Tertiaire;
     border-radius: 0 15px 15px 0;
+    transform: translateX(0);
 
     &:hover{
+        transform-origin: right;
         transform: translateX(1);
-        transition: transform 1s ease-in;
+        transition: transform 0.5s;
     }
+
+   
+    
 }
 .icone_check{
    display: flex;
@@ -275,16 +283,26 @@ h4{
         margin-bottom: 0;
     }
      .btn_commander{
-       
+        margin-left: 500px;
+        width: 200px;
         display: flex;
         justify-content: center;
-        width: 200px;
-        text-align: center;
+        font-weight: 900;
+        font-size:large;
      }
 }
      /*******FOOTERS*****/
      footer{
-       
+         h4{
+            text-align: center;
+            padding-top: 15px;
+            font-size: x-large;
+         }
+         nav{
             display: flex;
-
+            justify-content: space-around;
+           
+            padding-top: 10px;
+            padding-bottom: 40px;
+         }
      }

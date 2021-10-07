@@ -50,6 +50,7 @@ table {
 
 body {
   background-color: #e6e6e6;
+  font-family: 'Roboto';
 }
 
 body a {
@@ -147,6 +148,7 @@ button:hover .icone_check {
 }
 
 button strong {
+  /* ici ce bout de code sert a gere le prix */
   width: 30px;
   padding: 20px;
   padding-bottom: 0;
@@ -162,6 +164,7 @@ button strong {
 
 button p {
   font-weight: initial;
+  font-size: medium;
   text-align: left;
 }
 
@@ -175,20 +178,28 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .background_icone {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .background_icone:hover {
+  -webkit-transform-origin: right;
+          transform-origin: right;
   -webkit-transform: translateX(1);
           transform: translateX(1);
-  -webkit-transition: -webkit-transform 1s ease-in;
-  transition: -webkit-transform 1s ease-in;
-  transition: transform 1s ease-in;
-  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .icone_check {
@@ -257,6 +268,7 @@ h3 {
   margin-top: 20px;
   border: none;
   cursor: pointer;
+  font-family: 'Roboto';
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   width: auto;
@@ -410,21 +422,33 @@ h4 {
     margin-bottom: 0;
   }
   .btn_commander {
+    margin-left: 500px;
+    width: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 200px;
-    text-align: center;
+    font-weight: 900;
+    font-size: large;
   }
 }
 
 /*******FOOTERS*****/
-footer {
+footer h4 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: x-large;
+}
+
+footer nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 /*# sourceMappingURL=restaurant.css.map */
