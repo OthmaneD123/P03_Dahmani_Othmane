@@ -56,6 +56,7 @@ body {
 
 body a {
   text-decoration: none;
+  color: black;
 }
 
 p {
@@ -144,13 +145,17 @@ form input {
   font-family: 'Roboto';
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
 }
 
 .btn_header:hover {
-  -webkit-box-shadow: 5px 3px 5px grey;
-          box-shadow: 5px 3px 5px grey;
-  background: -webkit-gradient(linear, left top, right top, from(#684f4f), to(#8d2424));
-  background: linear-gradient(90deg, #684f4f, #8d2424);
+  -webkit-box-shadow: 0 0 20px #000002;
+          box-shadow: 0 0 20px #000002;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9aed8), to(#ae83e2));
+  background: linear-gradient(180deg, #e9aed8, #ae83e2);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .container {
@@ -162,14 +167,22 @@ form input {
           justify-content: center;
 }
 
+.container:hover {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
 .progress {
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 200px;
   background-color: aqua;
   border: solid 2px black;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
 }
 
 /********Section*****/
@@ -368,6 +381,12 @@ h4 {
         justify-content: space-around;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+  /**********************************************/
+  /* Parti Fontionnement */
+  /**********************************************/
+  .display_btn {
+    width: 300px;
   }
   /**********************************************/
   /*Section restaurant */

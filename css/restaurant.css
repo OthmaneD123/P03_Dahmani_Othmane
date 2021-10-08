@@ -145,6 +145,8 @@ button:hover .icone_check {
   width: 65px;
   -webkit-animation: 1s 0.5s both rotate;
           animation: 1s 0.5s both rotate;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 button strong {
@@ -196,10 +198,8 @@ h3 {
           transform-origin: right;
   -webkit-transform: translateX(1);
           transform: translateX(1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .icone_check {
@@ -276,7 +276,9 @@ h3 {
   padding: 15px 30px;
 }
 
-/********FOOTERS******/
+/*************************************************/
+/*----Footer *****/
+/************************************************/
 footer {
   background-color: #3f3e3e;
   padding-left: 20px;
@@ -295,6 +297,7 @@ footer i {
 h4 {
   font-family: 'Shrikhand';
   color: white;
+  padding-bottom: 10px;
 }
 
 .main {
@@ -421,6 +424,13 @@ h4 {
     margin-left: 50px;
     margin-bottom: 0;
   }
+  .entree {
+    /* Afin que es boutons ne bouge pas lorsque lanimation du boutton apparait */
+    width: 33%;
+  }
+  .plats {
+    width: 33%;
+  }
   .btn_commander {
     margin-left: 500px;
     width: 200px;
@@ -433,22 +443,24 @@ h4 {
     font-weight: 900;
     font-size: large;
   }
+  /*************************************************/
+  /*----Footers *****/
+  /************************************************/
+  footer h4 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: x-large;
+  }
+  footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
 }
 
 /*******FOOTERS*****/
-footer h4 {
-  text-align: center;
-  padding-top: 15px;
-  font-size: x-large;
-}
-
-footer nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 40px;
-}
 /*# sourceMappingURL=restaurant.css.map */
