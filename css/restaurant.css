@@ -55,6 +55,7 @@ body {
 
 body a {
   text-decoration: none;
+  color: black;
 }
 
 /******************************/
@@ -139,6 +140,10 @@ button {
   padding-left: 10px;
   padding-top: 3px;
   margin: 20px;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 button:hover .icone_check {
