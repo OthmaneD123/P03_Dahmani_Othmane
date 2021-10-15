@@ -1,0 +1,68 @@
+@-webkit-keyframes disparition {
+  to {
+    opacity: 0;
+    z-index: 0;
+  }
+  from {
+    opacity: 1;
+  }
+}
+
+@keyframes disparition {
+  to {
+    opacity: 0;
+    z-index: 0;
+  }
+  from {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loading {
+  to {
+    width: 100%;
+  }
+  from {
+    width: 0;
+  }
+}
+
+@keyframes loading {
+  to {
+    width: 100%;
+  }
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0) scale(0);
+            transform: rotate(0) scale(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(1.5);
+            transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    -webkit-transform: rotate(1turn) scale(0);
+            transform: rotate(1turn) scale(0);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0) scale(0);
+            transform: rotate(0) scale(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(1.5);
+            transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    -webkit-transform: rotate(1turn) scale(0);
+            transform: rotate(1turn) scale(0);
+  }
+}
+/*# sourceMappingURL=keyframes.css.map */

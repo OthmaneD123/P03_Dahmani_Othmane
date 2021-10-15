@@ -1,28 +1,13 @@
 @import "reset.scss";
 @import "mixin.scss";
 @import "variables.scss";
+@import "keyframes.scss";
 
 
 
 
-.container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: left;
 
-    z-index: 10000;
-}
-.progress {
-    background: linear-gradient(180deg, #e9aed8,#ae83e2); 
-    width: 200px;
-    height: 20px;
-    border: 3px solid black;
-    border-radius: 20px;
-    animation: loading 1s both infinite;
-
-}
-
+/*
 .progress__bar{
     content: "";
     width: 50px;
@@ -33,35 +18,13 @@
     border-radius: 50%;
     animation: circle 1s linear infinite;
     
-} 
-@keyframes loading {
-    to{
-        width: 0;
-        
-    }
-    from{
-        width: 100%;
-        
-    }
-}
-@keyframes circle {
-    0%{
-        transform: rotate(0)scale(0);
-    }
-    50%{
-        transform: rotate(180deg)scale(1.5);
-    }
-    100%{
-        transform: rotate(1turn)scale(0);
-    }
-}
+} */
+
 
 body{
     font-family : 'Roboto', sans-serif ;
     margin: 0 auto;
-    max-width: 1400px;
     
-
     a{
         text-decoration: none;
         color: black;
@@ -82,6 +45,35 @@ img{
     object-fit: cover;
     object-position: center;
     border-radius: 20px 20px 0 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    background: #000000c9;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 10000;
+    animation:  1s 2.8s 1 both disparition;
+}
+.progress {
+    background: linear-gradient(180deg, #e9aed8,#ae83e2); 
+    width: 200px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    animation: loading 3s 1 both ;
+}
+.container_progress {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: x-large;
+    color: white;
 }
 
                     /********HEADER******/
@@ -135,6 +127,7 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
 .btn_header{
    @include btn_header_et_commander;
    box-shadow: 0 0 20px rgb(0, 0 ,0.10%);
+   transition: 2s;
 
    
     &:hover
@@ -142,7 +135,7 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
     {
         box-shadow: 0 0 20px rgb(0 ,0 ,0.80%);
         background: linear-gradient(180deg, #e9aed8,#ae83e2);  
-        transition: 2s;
+        
     
     }
 }
