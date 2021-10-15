@@ -159,7 +159,6 @@ h3{
 }
 .desserts{
     animation: 2s 2s 1 both apparition;
-    width: 30%;
 }
 .btn_commander{
     @include btn_header_et_commander;
@@ -266,6 +265,9 @@ h4{
     }
     .plats{
         width: 33%;
+    }
+    .desserts{
+        width:33%;
     }
      .btn_commander{
         margin-left: 500px;

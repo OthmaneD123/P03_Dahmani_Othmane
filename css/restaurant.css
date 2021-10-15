@@ -370,7 +370,6 @@ h3 {
 .desserts {
   -webkit-animation: 2s 2s 1 both apparition;
           animation: 2s 2s 1 both apparition;
-  width: 30%;
 }
 
 .btn_commander {
@@ -511,6 +510,9 @@ h4 {
     width: 33%;
   }
   .plats {
+    width: 33%;
+  }
+  .desserts {
     width: 33%;
   }
   .btn_commander {
