@@ -107,17 +107,6 @@ h3{
     padding: 0;
     
 }
-.background_icone{
-    background-color: $Color_Tertiaire;
-    border-radius: 0 15px 15px 0;
-    transform: translateX(0);
-
-    &:hover{
-        transform-origin: right;
-        transform: translateX(1);
-        transition: 0.5s;
-    }
-}
 .texte_img{
     overflow: hidden;
     text-overflow: ellipsis;
@@ -125,6 +114,10 @@ h3{
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+.background_icone{
+    background-color: $Color_Tertiaire;
+    border-radius: 0 15px 15px 0;
 }
 .icone_check{
    display: flex;
@@ -161,9 +154,7 @@ h3{
 .plats{
     animation: 1.5s 2s 1 both apparition
 }
-.desserts{
-    animation: 1.5s 3s 1 both apparition;
-}
+
 .btn_commander{
     @include btn_header_et_commander;
     width: auto;
@@ -251,7 +242,7 @@ h4{
      .titre:after {  /*sert a faire apparaitre le petit trait en dessous chaque titre*/
         content: "";
         width: 50px;
-        height: 3px;
+        height: 5px;
         background-color: #99E2D0;
         display: block;
         margin-top: 9px;
