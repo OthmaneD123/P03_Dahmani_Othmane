@@ -116,6 +116,46 @@ table {
   }
 }
 
+/******* Animation du check sur les bouttons */
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/******* Animation de l'apparition des menu */
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   background-color: #e6e6e6;
   font-family: 'Roboto';
@@ -204,14 +244,10 @@ button {
   cursor: pointer;
   border-radius: 15px;
   background-color: white;
-  padding-right: 0;
-  padding-left: 10px;
-  padding-top: 3px;
+  padding: 0;
   margin: 20px;
   overflow: hidden;
-  padding: 10px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  color: black;
 }
 
 button:hover .icone_check {
@@ -257,6 +293,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 0;
 }
 
 .background_icone {
@@ -275,6 +312,15 @@ h3 {
   transition: 0.5s;
 }
 
+.texte_img {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .icone_check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,29 +336,6 @@ h3 {
   font-size: x-large;
   color: white;
   border-radius: 0 15px 15px 0;
-  overflow: hidden;
-}
-
-/******* Animation du check sur les bouttons */
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 .titre {
@@ -326,12 +349,28 @@ h3 {
 .titre:after {
   /*sert a faire apparaitre le petit trait en dessous chaque titre*/
   content: "";
-  width: 50px;
+  width: 20px;
   height: 3px;
   background-color: #99E2D0;
   display: block;
   margin-top: 9px;
   margin-bottom: 0;
+}
+
+.entree {
+  -webkit-animation: 2s 1s 1 both apparition;
+          animation: 2s 1s 1 both apparition;
+}
+
+.plats {
+  -webkit-animation: 2s 2s 1 both apparition;
+          animation: 2s 2s 1 both apparition;
+}
+
+.desserts {
+  -webkit-animation: 2s 2s 1 both apparition;
+          animation: 2s 2s 1 both apparition;
+  width: 30%;
 }
 
 .btn_commander {
@@ -381,36 +420,6 @@ h4 {
 /*************************************************/
 /* Creation de l'animation apparition  */
 /************************************************/
-.entree {
-  -webkit-animation: 2s 1s 1 both apparition;
-          animation: 2s 1s 1 both apparition;
-}
-
-.plats {
-  -webkit-animation: 2s 2s 1 both apparition;
-          animation: 2s 2s 1 both apparition;
-}
-
-/*.desserts{
-    animation: 2s 2s 1 both apparition
-}*/
-@-webkit-keyframes apparition {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes apparition {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /*************************************************/
 /*----VERSION TABLETTE *****/
 /************************************************/

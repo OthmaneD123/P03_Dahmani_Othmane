@@ -26,3 +26,25 @@
         transform: rotate(1turn)scale(0);
     }
 }
+/******* Animation du check sur les bouttons */
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+ }
+ /******* Animation de l'apparition des menu */
+
+ @keyframes apparition {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity:1;
+    }
+        
+}
