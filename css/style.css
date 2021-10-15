@@ -307,8 +307,6 @@ form input {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   -webkit-box-shadow: 0 0 20px #837f7f;
           box-shadow: 0 0 20px #837f7f;
-  -webkit-transition: 2s;
-  transition: 2s;
 }
 
 .btn_header:hover {
@@ -316,6 +314,8 @@ form input {
           box-shadow: 0 0 20px black;
   background: -webkit-gradient(linear, left top, left bottom, from(#e9aed8), to(#ae83e2));
   background: linear-gradient(180deg, #e9aed8, #ae83e2);
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 /********Section*****/

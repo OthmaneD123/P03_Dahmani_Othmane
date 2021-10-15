@@ -122,12 +122,13 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
 .btn_header{
    @include btn_header_et_commander;
    box-shadow: 0 0 20px rgb(131, 127, 127);
-   transition: 2s;
+   
 
     &:hover
     {
         box-shadow: 0 0 20px rgb(0, 0, 0);
         background: linear-gradient(180deg, #e9aed8,#ae83e2);  
+        transition: 2s;
     }
 }
 

@@ -98,7 +98,8 @@ button{
 }
 h3{
     text-align: left;
-    font-weight: bold;
+    font-size: large;
+    font-weight: 700;
 }
 .prix{ /* sert a bien placer le background et lanimation juste a cote du prix*/
     display: flex;
@@ -151,14 +152,17 @@ h3{
     margin-top: 9px;
     margin-bottom: 0;
 }
+            /*************************************************/
+                /* Creation de l'animation apparition  */
+            /************************************************/
 .entree{
-    animation: 2s 1s 1 both apparition
+    animation: 1.5s 1s 1 both apparition
 }
 .plats{
-    animation: 2s 2s 1 both apparition
+    animation: 1.5s 2s 1 both apparition
 }
 .desserts{
-    animation: 2s 2s 1 both apparition;
+    animation: 1.5s 3s 1 both apparition;
 }
 .btn_commander{
     @include btn_header_et_commander;
@@ -191,11 +195,6 @@ h4{
 .main{
     transform: rotate(-45deg);
 }
-            /*************************************************/
-                /* Creation de l'animation apparition  */
-            /************************************************/
-
-
                 /*************************************************/
                      /*----VERSION TABLETTE *****/
                /************************************************/
@@ -251,16 +250,15 @@ h4{
      }
      .titre:after {  /*sert a faire apparaitre le petit trait en dessous chaque titre*/
         content: "";
-        width: 200px;
+        width: 50px;
         height: 3px;
         background-color: #99E2D0;
         display: block;
         margin-top: 9px;
-        margin-left: 50px;
         margin-bottom: 0;
     }
 
-    .entree{/* Afin que es boutons ne bouge pas lorsque lanimation du boutton apparait */
+    .entree{/* Afin que les boutons ne bouge pas lorsque lanimation du boutton apparait */
         width: 33%;
     }
     .plats{
@@ -295,5 +293,4 @@ h4{
         }
     }
 }
-     /*******FOOTERS*****/
     
