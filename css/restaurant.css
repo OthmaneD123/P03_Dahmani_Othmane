@@ -224,12 +224,34 @@ h1 {
           box-sizing: border-box;
   /* Sert a ce qu'il n'y a pas de debordement, et evite que la width sajoute au padding*/
   background-color: #e6e6e6;
-  position: absolute;
+  position: relative;
 }
 
 h1 i {
   font-size: x-large;
   margin-left: 15px;
+  position: absolute;
+}
+
+.coeur_plein {
+  opacity: 0;
+  color: #99E2D0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.coeur_vide {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.favoris:hover .coeur_plein {
+  opacity: 1;
+}
+
+.favoris:hover .coeur_vide {
+  opacity: 0;
 }
 
 button {
@@ -247,6 +269,7 @@ button {
   padding: 0;
   margin: 20px;
   overflow: hidden;
+  text-overflow: ellipsis;
   color: black;
 }
 
@@ -277,12 +300,16 @@ button p {
   font-weight: initial;
   font-size: medium;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h3 {
   text-align: left;
   font-size: large;
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .prix {
@@ -294,6 +321,8 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 0;
 }
 

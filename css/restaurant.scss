@@ -54,13 +54,32 @@ h1{
     width: 100%;
     box-sizing: border-box;/* Sert a ce qu'il n'y a pas de debordement, et evite que la width sajoute au padding*/
     background-color:$Color_grey;
-    position: absolute;
+    position: relative;
     
     i {
         font-size: x-large;
         margin-left: 15px;
+        position: absolute;
     }
 }
+.coeur_plein{
+    opacity:0;
+    color:$Color_Tertiaire;
+    transition:1s;
+   
+  }
+.coeur_vide {
+    opacity:1;
+   transition: 1s;
+  }
+  .favoris:hover .coeur_plein  {
+    opacity:1
+  }
+  
+  .favoris:hover .coeur_vide {
+    opacity:0
+  }
+
 button{
     width: 90%;
     display: flex;
@@ -72,6 +91,7 @@ button{
     padding: 0;
     margin: 20px;
     overflow: hidden;
+    text-overflow: ellipsis;
     color: black;
 
     &:hover
@@ -94,16 +114,22 @@ button{
        font-weight: initial; 
        font-size: medium;
        text-align: left;
+       overflow: hidden;
+    text-overflow: ellipsis;
     }
 }
 h3{
     text-align: left;
     font-size: large;
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .prix{ /* sert a bien placer le background et lanimation juste a cote du prix*/
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    text-overflow: ellipsis;
     padding: 0;
    
     
