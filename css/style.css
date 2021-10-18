@@ -431,7 +431,7 @@ h3 {
 /******** Pour gerer licone avec le coeur vide /coeur plein *****/
 .coeur_plein {
   opacity: 0;
-  color: #99E2D0;
+  color: #9356DC;
   -webkit-transition: 1s;
   transition: 1s;
 }
