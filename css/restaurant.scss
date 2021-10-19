@@ -49,6 +49,7 @@ h1{
     padding-left: 20px;
     padding-top: 30px;
     margin-top: -53px;
+    margin-bottom: 20px;
     z-index: 1;
     border-radius: 45px 45px 0 0  ;
     width: 100%;
@@ -79,7 +80,12 @@ h1{
   .favoris:hover .coeur_vide {
     opacity:0
   }
-
+  body{ /** Pour que les menu entree plat dessert sois tous aligne au meme niveau */
+    section{
+        display: flex;
+        align-items: flex-start;
+    }
+}
 button{
     width: 90%;
     display: flex;
