@@ -80,13 +80,7 @@ h1{
   .favoris:hover .coeur_vide {
     opacity:0
   }
-  body{ /** Pour que les menu entree plat dessert sois tous aligne au meme niveau */
-    section{
-        display: flex;
-        align-items: flex-start;
-    }
-}
-button{
+.vignette{
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -269,13 +263,14 @@ h4{
     }
 
      /*******SECTION*****/
-     section{
-        @include flexcenter;
-        flex-wrap: wrap;
+     body{ /** Pour que les menu entree plat dessert sois tous aligne au meme niveau */
+        section{
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
         justify-content: space-around;
-       
-        
-     }
+        }
+    }
      .titre:after {  /*sert a faire apparaitre le petit trait en dessous chaque titre*/
         content: "";
         width: 50px;
