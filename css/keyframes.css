@@ -1,18 +1,22 @@
 @-webkit-keyframes disparition {
   to {
     opacity: 0;
+    z-index: -1;
   }
   from {
     opacity: 1;
+    z-index: 1000;
   }
 }
 
 @keyframes disparition {
   to {
     opacity: 0;
+    z-index: -1;
   }
   from {
     opacity: 1;
+    z-index: 1000;
   }
 }
 

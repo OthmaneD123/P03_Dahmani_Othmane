@@ -51,7 +51,6 @@ table {
 @-webkit-keyframes disparition {
   to {
     opacity: 0;
-    z-index: 0;
   }
   from {
     opacity: 1;
@@ -61,7 +60,6 @@ table {
 @keyframes disparition {
   to {
     opacity: 0;
-    z-index: 0;
   }
   from {
     opacity: 1;
