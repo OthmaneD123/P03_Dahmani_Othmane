@@ -51,18 +51,22 @@ table {
 @-webkit-keyframes disparition {
   to {
     opacity: 0;
+    z-index: -1;
   }
   from {
     opacity: 1;
+    z-index: 1000;
   }
 }
 
 @keyframes disparition {
   to {
     opacity: 0;
+    z-index: -1;
   }
   from {
     opacity: 1;
+    z-index: 1000;
   }
 }
 
@@ -537,9 +541,7 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin: 24 auto;
     font-weight: 900;
     font-size: large;
   }
