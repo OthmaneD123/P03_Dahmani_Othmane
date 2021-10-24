@@ -2,6 +2,37 @@
 @import "mixin.scss";
 @import "variables.scss";
 @import "keyframes.scss";
+
+               /******* LOADING*******/
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    background: #000000c9;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 10000;
+    animation:  1s 2.8s 1 both disparition;
+}
+.progress {
+    background: linear-gradient(180deg, #e9aed8,#ae83e2); 
+    width: 200px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    animation: loading 3s 1 both ;
+}
+.container_progress {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+
 body{
     background-color:   $Color_grey;
     font-family: 'Roboto';
@@ -188,10 +219,22 @@ h3{
 }
 .btn_commander{
     @include btn_header_et_commander;
-    width: auto;
     margin-left: 110px;
+    margin-bottom: 20px;
     padding: 15px 30px;
+    box-shadow: 0 0 20px rgb(199, 181, 181);
+    font-size: large;
+   
+
+    &:hover
+    {
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+        background: linear-gradient(180deg, #e9aed8,#ae83e2);  
+        transition: 2s;
+    }
 }
+
+    
                 /*************************************************/
                      /*----Footer *****/     
                /************************************************/
@@ -290,14 +333,30 @@ h4{
     .desserts{
         width:33%;
     }
-     .btn_commander{
+     /*.btn_commander{
         margin-left: 500px;
         width: 200px;
         display: flex;
         margin: 24 auto;
         font-weight: 900;
         font-size:large;
-     }
+     }*/
+     .btn_commander{
+         @include btn_header_et_commander;
+         box-shadow: 0 0 20px rgb(131, 127, 127);
+        display: block;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+         &:hover
+         {
+             box-shadow: 0 0 20px rgb(0, 0, 0);
+             background: linear-gradient(180deg, #e9aed8,#ae83e2);  
+             transition: 2s;
+         }
+   }
+     
                 /*************************************************/
                      /*----Footers *****/     
                /************************************************/

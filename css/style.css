@@ -174,6 +174,7 @@ table {
       align-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  z-index: 10000;
   -webkit-animation: 1s 2.8s 1 both disparition;
           animation: 1s 2.8s 1 both disparition;
 }
@@ -296,8 +297,8 @@ form input {
   font-family: 'Roboto';
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
-  -webkit-box-shadow: 0 0 20px #837f7f;
-          box-shadow: 0 0 20px #837f7f;
+  -webkit-box-shadow: 0 0 20px #c7b5b5;
+          box-shadow: 0 0 20px #c7b5b5;
 }
 
 .btn_header:hover {
@@ -408,8 +409,7 @@ h2 {
 .background_img i {
   position: absolute;
   right: 0;
-  top: 0;
-  padding-top: 220px;
+  top: 220px;
 }
 
 .new {
@@ -432,9 +432,12 @@ h3 {
 /******** Pour gerer licone avec le coeur vide /coeur plein *****/
 .coeur_plein {
   opacity: 0;
-  color: #9356DC;
   -webkit-transition: 1s;
   transition: 1s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8753c6), to(#ff00ea));
+  background: linear-gradient(180deg, #8753c6 0%, #ff00ea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .coeur_vide {
