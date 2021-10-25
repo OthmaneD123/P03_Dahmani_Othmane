@@ -48,21 +48,21 @@ table {
   border-spacing: 0;
 }
 
+/* Pou faire disparaitre la div container ( animations loader ) */
 @-webkit-keyframes disparition {
   to {
     opacity: 0;
-    z-index: -1;
+    z-index: 0;
   }
   from {
     opacity: 1;
     z-index: 1000;
   }
 }
-
 @keyframes disparition {
   to {
     opacity: 0;
-    z-index: -1;
+    z-index: 0;
   }
   from {
     opacity: 1;
@@ -70,6 +70,7 @@ table {
   }
 }
 
+/* Animation barre de chargement */
 @-webkit-keyframes loading {
   to {
     width: 100%;
@@ -78,7 +79,6 @@ table {
     width: 0;
   }
 }
-
 @keyframes loading {
   to {
     width: 100%;
@@ -88,6 +88,7 @@ table {
   }
 }
 
+/* aniation pour faire un cercle qui tourne et grpssis */
 @-webkit-keyframes circle {
   0% {
     -webkit-transform: rotate(0) scale(0);
@@ -102,7 +103,6 @@ table {
             transform: rotate(1turn) scale(0);
   }
 }
-
 @keyframes circle {
   0% {
     -webkit-transform: rotate(0) scale(0);

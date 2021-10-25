@@ -52,7 +52,7 @@ table {
 @-webkit-keyframes disparition {
   to {
     opacity: 0;
-    z-index: -1;
+    z-index: -10000;
   }
   from {
     opacity: 1;
@@ -62,7 +62,7 @@ table {
 @keyframes disparition {
   to {
     opacity: 0;
-    z-index: -1;
+    z-index: -10000;
   }
   from {
     opacity: 1;
@@ -259,7 +259,7 @@ h1 {
   font-size: x-large;
   padding-left: 20px;
   padding-top: 30px;
-  margin-top: -53px;
+  margin-top: -50px;
   margin-bottom: 20px;
   z-index: 1;
   border-radius: 45px 45px 0 0;
