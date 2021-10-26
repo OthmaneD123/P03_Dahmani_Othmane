@@ -52,7 +52,7 @@ table {
 @-webkit-keyframes disparition {
   to {
     opacity: 0;
-    z-index: 0;
+    z-index: -10;
   }
   from {
     opacity: 1;
@@ -62,7 +62,7 @@ table {
 @keyframes disparition {
   to {
     opacity: 0;
-    z-index: 0;
+    z-index: -10;
   }
   from {
     opacity: 1;
@@ -236,11 +236,14 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 header p {
   padding-top: 10px;
   font-weight: 100;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h1 {
@@ -271,7 +274,7 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #cccccc;
+  background-color: #e6e6e6;
   padding: 10px;
 }
 
@@ -312,6 +315,11 @@ form input {
 
 /********Section*****/
 /*******FONCTIONNEMENT******/
+h2 {
+  font-size: large;
+  margin-bottom: 15px;
+}
+
 section {
   /* ce bout de code sera transformer en mixin */
 }
@@ -402,7 +410,7 @@ h2 {
 .background_img p {
   font-weight: 200;
   padding: 0px 0px 20px 10px;
-  margin: 0;
+  margin-top: 7px;
   color: black;
 }
 
@@ -410,17 +418,18 @@ h2 {
   position: absolute;
   right: 0;
   top: 220px;
+  font-size: x-large;
 }
 
 .new {
   /* Pour le carre avec lembleme nouveau sur la photo du restaurant */
   background-color: #99E2D0;
   color: #5a4d4d;
-  padding: 5px;
+  padding: 10px;
   font-weight: 700;
   font-size: small;
   position: absolute;
-  top: 30px;
+  top: 10px;
   right: 20px;
 }
 
@@ -489,6 +498,8 @@ footer i {
 h4 {
   font-family: 'Shrikhand';
   color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main {

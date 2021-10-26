@@ -62,9 +62,12 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
     p{
         padding-top: 10px;
-        font-weight: 100; 
+        font-weight: 100;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 h1{
@@ -89,7 +92,7 @@ h1{
 form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
     display: flex;
     justify-content: center;
-    background-color:  hsl(0, 0%, 80%);
+    background-color: hsl(0, 0%, 90%);
     padding: 10px;
 
     i{
@@ -120,6 +123,10 @@ form{ /*Cette parti de code sert pour le barre de recherche dans le HEADER*/
 
             /********Section*****/
             /*******FONCTIONNEMENT******/
+h2{
+    font-size: large;
+    margin-bottom: 15px
+}
 section {  /* ce bout de code sera transformer en mixin */
 
     button{
@@ -175,14 +182,15 @@ h2 {
        
         font-weight: 200;
         padding: 0px 0px 20px 10px;
-        margin: 0;
+        margin-top: 7px;
         color: black;
     }
 
     i{
         position: absolute;
         right: 0;
-        top: 220px;;
+        top: 220px;
+        font-size: x-large;
   
     }
 
@@ -190,11 +198,11 @@ h2 {
 .new{ /* Pour le carre avec lembleme nouveau sur la photo du restaurant */
     background-color: $Color_Tertiaire;
     color: rgb(90, 77, 77);
-    padding: 5px;
+    padding: 10px;
     font-weight: 700;
     font-size: small;
     position: absolute;
-    top: 30px;
+    top: 10px;
     right:20px;
 }
 h3{
@@ -254,6 +262,9 @@ footer{
 h4{
     font-family: 'Shrikhand';
     color: $Color_white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
 }
 .main{
     transform: rotate(-45deg);
